@@ -1,0 +1,7 @@
+{
+  "name": "estilosycss",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
