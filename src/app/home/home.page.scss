@@ -1,9 +1,9 @@
-// 1. Variables de color Sass
+/* Variables de color */
 $color-rojo: #e11d48;
 $color-azul: #2563eb;
 $color-verde: #16a34a;
 
-// 2. Título en rojo, mayúsculas y centrado
+/* 4. Título en rojo, mayúsculas y centrado */
 .titulo-principal {
   color: $color-rojo;
   text-transform: uppercase;
@@ -11,27 +11,26 @@ $color-verde: #16a34a;
   font-weight: bold;
 }
 
-// 3. Contenedor del botón alineado a la derecha
+/* 5. Botón a la derecha en azul */
 .contenedor-boton {
   display: flex;
-  justify-content: flex-end; // Alinea el contenido a la derecha
+  justify-content: flex-end;
   margin-bottom: 20px;
 
-  // Personalización del botón Ionic
   ion-button.boton-azul {
-    --background: #{$color-azul}; // Variable CSS nativa de Ionic
+    --background: #{$color-azul};
     --color: #ffffff;
   }
 }
 
-// 4. Contenedor e imagen centrada con borde verde de 3px
+/* 6. Imagen centrada con borde verde de 3px */
 .contenedor-imagen {
   display: flex;
-  justify-content: center; // Centra la imagen horizontalmente
-  margin-top: 20px;
+  justify-content: center;
+  margin-top: 15px;
 
   img.imagen-borde-verde {
-    border: 3px solid $color-verde; // Borde verde de 3px
+    border: 3px solid $color-verde;
     border-radius: 8px;
     max-width: 100%;
     height: auto;
