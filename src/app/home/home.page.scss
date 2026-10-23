@@ -1,27 +1,39 @@
-#container {
+// 1. Variables de color Sass
+$color-rojo: #e11d48;
+$color-azul: #2563eb;
+$color-verde: #16a34a;
+
+// 2. Título en rojo, mayúsculas y centrado
+.titulo-principal {
+  color: $color-rojo;
+  text-transform: uppercase;
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  font-weight: bold;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+// 3. Contenedor del botón alineado a la derecha
+.contenedor-boton {
+  display: flex;
+  justify-content: flex-end; // Alinea el contenido a la derecha
+  margin-bottom: 20px;
+
+  // Personalización del botón Ionic
+  ion-button.boton-azul {
+    --background: #{$color-azul}; // Variable CSS nativa de Ionic
+    --color: #ffffff;
+  }
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+// 4. Contenedor e imagen centrada con borde verde de 3px
+.contenedor-imagen {
+  display: flex;
+  justify-content: center; // Centra la imagen horizontalmente
+  margin-top: 20px;
 
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+  img.imagen-borde-verde {
+    border: 3px solid $color-verde; // Borde verde de 3px
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+  }
 }
