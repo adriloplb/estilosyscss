@@ -1,17 +1,15 @@
-/* Variables de color */
 $color-rojo: #e11d48;
 $color-azul: #2563eb;
 $color-verde: #16a34a;
 
-/* 4. Título en rojo, mayúsculas y centrado */
 .titulo-principal {
   color: $color-rojo;
   text-transform: uppercase;
   text-align: center;
   font-weight: bold;
+  margin: 0 0 24px;
 }
 
-/* 5. Botón a la derecha en azul */
 .contenedor-boton {
   display: flex;
   justify-content: flex-end;
@@ -20,16 +18,18 @@ $color-verde: #16a34a;
   ion-button.boton-azul {
     --background: #{$color-azul};
     --color: #ffffff;
+    --background-activated: #1d4ed8;
   }
 }
 
-/* 6. Imagen centrada con borde verde de 3px */
 .contenedor-imagen {
   display: flex;
   justify-content: center;
   margin-top: 15px;
+  width: 100%;
 
   img.imagen-borde-verde {
+    display: block;
     border: 3px solid $color-verde;
     border-radius: 8px;
     max-width: 100%;
